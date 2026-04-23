@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code&family=Poppins:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", "Inter", sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  --color-deep-navy: #0B1F3A;
+  --color-electric-blue: #4A90D9;
+  --color-soft-white: #F5F9FF;
+  --color-midnight-teal: #1A3D5C;
+  --color-slate-gray: #8899AA;
+  --color-success-green: #27AE60;
+  --color-gold-accent: #F5A623;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans antialiased bg-deep-navy text-white;
+  }
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 3px rgba(74, 144, 217, 0.3);
+}
+
+.typewriter-cursor {
+  @apply border-r-2 border-electric-blue animate-pulse;
+}
+
+@keyframes pulse-dot {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.pulse-dot {
+  animation: pulse-dot 1.5s infinite ease-in-out;
+}
