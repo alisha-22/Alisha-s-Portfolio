@@ -32,7 +32,10 @@ jobs:
 
       - name: Build
         run: npm run build
-
+    
+      - name: Setup Node.js 
+        run: npm run build 
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
