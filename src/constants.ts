@@ -7,8 +7,8 @@ import { Project, SkillCategory, Certification, Stat } from './types';
 
 export const PERSONAL_INFO = {
   name: "Alisha Khan",
-  titlePrimary: "Data Analyst",
-  titles: ["Data Analyst", "ML Enthusiast", "BI Dashboard Developer"],
+  titlePrimary: "Data Scientist",
+  titles: ["Data Scientist", "ML Enthusiast", "BI Dashboard Developer"],
   tagline: "Turning raw data into meaningful insights — through analysis, visualization, and machine learning.",
   bio: "Data Analyst with a Bachelor's degree in Computer Science and hands-on experience in Python, SQL, and machine learning. Skilled in data cleaning, exploratory data analysis (EDA), predictive modeling, and data visualization using Tableau and Power BI. Completed the Google Advanced Data Analytics Professional Certificate, delivering end-to-end analytics projects involving statistical analysis and model evaluation. Demonstrates strong ability to translate complex datasets into actionable insights to support data-driven decision-making.",
   education: {
